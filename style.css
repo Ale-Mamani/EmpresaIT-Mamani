@@ -1,0 +1,223 @@
+                           .contenedor {
+                               display: grid;
+                               gap: 1rem;
+                               grid-template-areas: "cabecera cabecera" "cuerpo cuerpo" "redes redes";
+                           }
+                           
+                           .contenedor>* {
+                               background-color: black;
+                           }
+                           
+                           .grid-header {
+                               grid-template-columns: 1fr 1fr;
+                               grid-template-rows: 17rem;
+                               background-image: linear-gradient( black, blue);
+                               justify-content: space-between;
+                               align-items: center;
+                               display: flex;
+                               margin-left: 0;
+                           }
+                           
+                           .grid-mainIndex {
+                               display: grid;
+                               grid-template-columns: 1fr 1fr;
+                               align-items: center;
+                               gap: 1rem;
+                           }
+                           
+                           .grid-mainIndex p {
+                               text-align: center;
+                           }
+                           
+                           .grid-footer {
+                               height: 100%;
+                               display: grid;
+                               grid-template-columns: 1fr 1fr 1fr 1fr;
+                               background-image: url(./imagenes/fondo-menu2.jpg);
+                               justify-items: center;
+                               align-items: center;
+                               transition: 0.5s;
+                           }
+                           
+                           .grid-footer img:hover {
+                               transform: translate(0.5rem, 0.5rem);
+                               transform: skewY(10deg)
+                           }
+                           
+                           .header-area {
+                               grid-area: cabecera;
+                           }
+                           
+                           .main-area {
+                               grid-area: cuerpo;
+                           }
+                           
+                           .footer-area {
+                               grid-area: redes;
+                           }
+                           
+                           .logo-empresa {
+                               width: 10rem;
+                               height: 8rem;
+                               margin-left: 0;
+                               transition: height 2s;
+                           }
+                           
+                           .logo-empresa:hover {
+                               transform: translate(5px, 10px);
+                           }
+                           
+                           .imagen-serv {
+                               width: 30rem;
+                               height: 20rem;
+                               margin-left: 10%;
+                           }
+                           
+                           .icono {
+                               width: 3rem;
+                               height: 3rem;
+                           }
+                           
+                           .imagen-inicio {
+                               height: 30rem;
+                               width: 60rem;
+                           }
+                           
+                           .menu-navegacion {
+                               display: flex;
+                               list-style: none;
+                           }
+                           
+                           .menu-navegacion li {
+                               margin-right: 6rem;
+                               transition: 0.2s;
+                           }
+                           
+                           .menu-navegacion li:hover {
+                               transform: translate(0.5rem, 0.5rem);
+                               border: solid 1px;
+                           }
+                           
+                           .a-quienesSomos {
+                               transition: 0.5s;
+                           }
+                           
+                           .a-quienesSomos:hover {
+                               font-size: larger;
+                           }
+                           
+                           .a-Servicios {
+                               transition: 0.5s;
+                           }
+                           
+                           .a-Servicios:hover {
+                               font-size: larger;
+                           }
+                           
+                           .a-Contacto {
+                               transition: 0.5s;
+                           }
+                           
+                           .a-Contacto:hover {
+                               font-size: larger;
+                           }
+                           
+                           .a-Inicio {
+                               transition: 0.5s;
+                           }
+                           
+                           .a-Inicio:hover {
+                               font-size: larger;
+                           }
+                           
+                           .a-Equipamiento {
+                               transition: 0.5s;
+                           }
+                           
+                           .a-Equipamiento:hover {
+                               font-size: larger;
+                           }
+                           
+                           .tituloPagina {
+                               color: white;
+                               text-align: center;
+                           }
+                           
+                           p {
+                               color: white;
+                               font-size: large;
+                           }
+                           
+                           a {
+                               color: white;
+                               text-decoration: none;
+                               font-size: large;
+                           }
+                           /* quienes somos */
+                           
+                           .main-quienesSomos {
+                               display: flex;
+                               justify-content: space-between;
+                           }
+                           
+                           .imagen-quienesSomos {
+                               height: 30rem;
+                               width: 45rem;
+                           }
+                           
+                           .parrafo-quienesSomos {
+                               margin-left: 3rem;
+                               margin-right: 3rem;
+                           }
+                           
+                           .subtitulo-quienesSomos {
+                               color: white;
+                               text-align: center;
+                           }
+                           /* equipamiento */
+                           
+                           .mainEquipamiento {
+                               color: aqua;
+                               width: 118.5rem;
+                               height: 25rem;
+                           }
+                           /* servicios */
+                           
+                           .mainServ-grid p {
+                               text-align: center;
+                           }
+                           
+                           .mainServ-grid h4 {
+                               text-align: center;
+                               color: white;
+                           }
+                           
+                           .mainServ-grid {
+                               display: grid;
+                               grid-template-columns: 1fr 1fr 1fr;
+                               grid-template-rows: repeat(2, 25rem);
+                               gap: 1rem;
+                               align-content: center;
+                               justify-content: space-between;
+                           }
+                           
+                           .mainServ-grid>* {
+                               background-color: rgb(2, 1, 7);
+                           }
+                           
+                           @media (max-width: 768px) {
+                               .grid-header {
+                                   grid-template-columns: 1fr;
+                               }
+                               .grid-mainIndex {
+                                   grid-template-columns: 1fr;
+                               }
+                               .mainServ-grid {
+                                   grid-template-columns: 1fr;
+                                   grid-template-rows: repeat(12, 15rem);
+                               }
+                               .grid-footer {
+                                   grid-template-columns: 1fr;
+                                   grid-template-rows: 1fr 1fr 1fr;
+                               }
+                           }
